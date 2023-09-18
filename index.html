@@ -81,6 +81,8 @@
 
     $('ol').append('<li> We just added this </li>');
 
+    //$('ol').append("<li>").text("hi");
+
     $('aside').empty().append("<p> I apologize for the list's existence</p>");
 
     $('.form-control').on('change', function () {
@@ -90,8 +92,9 @@
       $("body").css("background-color", `rgb(${red},${green},${blue})`);
     });
 
-    $('img').on('click', function () {
-      $('img').remove();
+    $('img').on('click', function (evt) {
+      $(evt.target).remove();
+     // $('img').remove();
     });
 
   </script>
