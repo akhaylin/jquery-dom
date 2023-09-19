@@ -10,12 +10,15 @@
 
   <form class ="movie-form">
       Title:
-      <input type="text"name="title"id="title-input">
+      <input type="text"name="title"id="title-input" minlength = "2">
       Rating:
-      <input type="text"name="rating"id="rating-input">
+      <input id = "rating-input" type="number" min="0" max="10" >
       <button type = "submit" id = "submit-button">Submit</button>
   </form>
-
+  <select name="sort-order" id="sort-order">
+    <option value="movieTitle">Sort by Title</option>
+    <option value="movieRating">Sort by Rating</option>
+  </select>
   <div class="movie-list"></div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
